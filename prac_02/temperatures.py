@@ -29,11 +29,13 @@ def main():
 
 
 def convert_Fahrenheit_to_Celsius(fahrenheit):
+    """ Coverts Fahrenheit to Celsius from user input"""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
 
 def convert_celsius_to_fahrenheit(celsius):
+    """ Coverts Celsius to Fahrenheit from user input"""
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
