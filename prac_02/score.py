@@ -13,6 +13,7 @@ def main():
     print(f"Your random score is: {random_score}, which is {determine_users_score(random_score)}")
 
 def determine_users_score(score):
+    """Get a numeric score and display the score category."""
     if score < 0 or score > 100:
         category = "Invalid"
     elif score < 50:
