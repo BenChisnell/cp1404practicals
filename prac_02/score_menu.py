@@ -24,6 +24,7 @@ def main():
 
 
 def get_valid_score():
+    """ Get a valid score from a user (Between 0-100 inclusive) """
     score = int(input("Enter a valid score (0-100 inclusive): "))
     while score < 0 or score > 100:
         print("Invalid score")
@@ -33,6 +34,7 @@ def get_valid_score():
 
 
 def determine_users_score(score):
+    """Determine the category of a users' valid score"""
     if score < 0 or score > 100:
         category = "Invalid"
     elif score < 50:
@@ -45,12 +47,14 @@ def determine_users_score(score):
 
 
 def print_results(score):
+    """Print the result of a valid score"""
     category = determine_users_score(score)
     print(f"Your score of {score} is {category}")
     print()
 
 
 def print_character(score):
+    """Print number of '*'s for that valid score amount"""
     for i in range(score):
         print("*", end="")
     print()
