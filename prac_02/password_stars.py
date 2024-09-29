@@ -8,11 +8,13 @@ def main():
 
 
 def print_password_as_astericks(user_password):
+    """Print password values into '*'s' """
     for i in range(len(user_password)):
         print("*", end="")
 
 
 def get_password(password_length):
+    """Compares user password length against a password length variable"""
     user_password = input("Enter your password: ")
     while len(user_password) < password_length:
         print(f"Password doesn't meet minimum length, which is {password_length} characters.")
