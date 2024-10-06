@@ -2,7 +2,7 @@
 # The values: 18, 19, 16
 # Smallest number: 5
 # Largest number: 19
-#
+
 # What did you see on line 2?
 # The values: 5, 9, 3
 # Smallest number: 3

@@ -1,31 +1,28 @@
 # Q1.
-#
-# name = input("Name: ")
-# out_file = open("name.txt", "w")
-# print(name, file=out_file)
-# out_file.close()
-from ast import literal_eval
 
-# Q2.
-# in_file = open("name.txt")
-# text = in_file.read()
-# in_file.close()
-# print(f"Hi {text}!")
-# NOT WORKING
+out_file = open("name.txt", "w")
+name = input("Name: ")
+print(name, file=out_file)
+out_file.close()
 
-# Q3.
+
+ # Q2.
+in_file = open("name.txt")
+name = in_file.read().strip()
+in_file.close()
+print(f"Hi {name}!")
+
+
+ # Q3.
+with open("numbers.txt", "r") as in_file:
+    number1 = int(in_file.readline())
+    number2 = int(in_file.readline())
+print(number1 + number2)
+
+ # Q4.
+total = 0
 with open("numbers.txt", "r") as in_file:
     for line in in_file:
-        value = int(in_file.readline())
-        print(value)
-    in_file.close()
-
-# with open("numbers.txt", "r") as in_file:
-#     in_file
-#     print(in_file)
-# in_file.close()
-
-# with open("numbers.txt", "r") as in_file:
-#     text = in_file.read()
-#     in_file.close()
-#     print(text)
+        number = int(line)
+        total += number
+print(total)
