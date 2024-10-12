@@ -25,6 +25,7 @@ def load_subjects():
 
 
 def display_subjects(subjects):
+    """Format data correctly"""
     for subject in subjects:
         print(f"{subject[0]} is taught by {subject[1]} and has {subject[2]} students.")
 
