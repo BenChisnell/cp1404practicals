@@ -2,7 +2,7 @@
 CP1404 Practical
 Word Occurrences
 Estimate: 30 minutes
-Actual:   51 minutes
+Actual:   53 minutes
 """
 
 word_count = {}
@@ -16,3 +16,4 @@ words.sort()
 max_length = max((len(word) for word in words))
 for word in words:
     print(f"{word:{max_length}} : {word_count[word]}")
+
