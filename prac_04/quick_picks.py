@@ -5,8 +5,8 @@ Quick Picks
 import random
 
 MINIMUM = 1
-MAXIMUM = 80
-NUMBERS_PER_LINE = 10
+MAXIMUM = 45
+NUMBERS_PER_LINE = 6
 
 number_of_quick_picks = 2
 # number_of_quick_picks = int(input("How many quick picks? "))
