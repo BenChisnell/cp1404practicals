@@ -12,7 +12,7 @@ def main():
     while email != "":
         name = extract_name(email)
         correct_name = input(f"Is your name {name}? [Y/n]").upper()
-        if correct_name.upper() != "Y" and correct_name != "":
+        if correct_name != "Y" and correct_name != "":
             name = input("Name: ")
         name_to_email[email] = name
         email = input("Email: ")
