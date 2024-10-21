@@ -18,6 +18,7 @@ def main():
 
 
 def process_records(records):
+    """Create a dictionary of champions and a list of countries"""
     champion_count = {}
     countries = set()
     for record in records:
@@ -30,6 +31,7 @@ def process_records(records):
 
 
 def display_results(champion_count, countries):
+    """Display champions and countries"""
     print("Wimbledon Champions: ")
     for name, count in champion_count.items():
         print(name, count)
