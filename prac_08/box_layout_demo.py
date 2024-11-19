@@ -1,0 +1,26 @@
+from kivy.app import App
+from kivy.lang import Builder
+
+
+class BoxLayoutDemo(App):
+    """Main Program to get user input and then greet the user."""
+
+    def build(self):
+        """Build the Kivy GUI."""
+        self.title = "Box Layout Demo"
+        self.root = Builder.load_file('box_layout.kv')
+        return self.root
+
+    def handle_greet(self):
+        """Handle the greeting inside GUI"""
+        print("test")
+        # self.root.ids.output_label.text = "Hello"
+        self.root.ids.output_label.text = f"Hello {self.root.ids.input_name.text}"
+
+    def clear_all(self):
+        """Clear all widgets that are children of the "entries_box" layout widget."""
+        self.root.ids.input_name.text = ""
+        self.root.ids.output_label.text = ""
+
+
+BoxLayoutDemo().run()
